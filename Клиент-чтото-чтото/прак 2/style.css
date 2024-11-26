@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fffab5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4ff5c;
+    transition: .2s;
+}
+
+
+body {
+    background-color: #020012;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+section, footer, header {
+    max-width: 1200px;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+.section_header {
+    margin: 0 0 20px;
+}
+
+
+.section_paragraph {
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.titke_and_logo {
+    display: flex;
+    align-items: center;
+}
+
+.titke_and_logo img {
+    margin-right: 10px;
+}
+
+.titke_and_logo h1 {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 50px;
+}
+
+.section_general .section_header {
+    
+}
+
+.section_1 {
+    
+}
+
+dl {
+    width: 60%; /* Ширина списка определений */
+}
+
+dt {
+    margin-top: 15px; /* Отступ сверху для отделения каждого термина */
+}
+
+dd {
+    margin-left: 20px; /* Отступ для значений определений */
+    margin-bottom: 10px; /* Отступ снизу между элементами */
+    font-size: 1em; /* Размер шрифта */
+    line-height: 1.6; /* Высота строки для лучшей читаемости */
+}
+
+dd::before {
+    content: "- "; /* Добавление маркера перед каждым определением */
+    color: #fff; /* Цвет маркера */
+    font-size: 1.2em; /* Размер маркера */
+}
+
+dt:first-of-type {
+    margin-top: 0; /* Убираем верхний отступ для первого термина */
+}
+
+
+.section_3 .section_paragraph {
+    padding-bottom: 30px;
+}
+
+.section_4 li {
+    padding: default;
+    margin: 0 0 0 20px;
+}
+
+.section_5 h3{
+    margin: 15px 0 10px;
+}
+
+
+footer {
+    background-color: #2c3e50; /* Темный фон для футера */
+    color: #ecf0f1; /* Светлый текст для контраста */
+    padding: 20px; /* Отступы вокруг содержимого */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: 'Arial', sans-serif; /* Общий шрифт */
+}
+
+footer address {
+    font-style: normal; /* Убираем курсив у address */
+    line-height: 1.8; /* Межстрочный интервал для удобства чтения */
+    margin-bottom: 15px; /* Отступ снизу для разделения текста */
+}
+
+footer address br {
+    display: none; /* Убираем переносы строк для чистого вида */
+}
+
+footer p {
+    margin-top: 10px; /* Небольшой отступ сверху */
+    font-size: 14px; /* Мелкий текст для авторских прав */
+    color: #bdc3c7; /* Светло-серый цвет текста для ненавязчивости */
+}
+
+    footer a {
+    color: #1abc9c; /* Цвет ссылок для акцента */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+}
+
+@media (max-width: 600px) {
+    footer {
+        text-align: left; /* Выравнивание по левому краю на маленьких экранах */
+    }
+
+    footer address {
+        line-height: 1.6; /* Меньший межстрочный интервал на маленьких экранах */
+    }
+}
+  
+
+/* .menu li a {
+    text-decoration: none;
+} */
+
+
+
+/* section:nth-child(odd) {
+    background-color: #6e6bff;
+}
+
+
+section:nth-child(even) {
+    background-color: #4844fc;
+} */
