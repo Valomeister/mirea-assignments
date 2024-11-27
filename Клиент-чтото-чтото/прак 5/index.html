@@ -36,7 +36,6 @@
         </p>  
         <img src="ss-png-2.png" alt="solar system">
     </section>
-
     <section>
     <h2  class="section_header" id="terms">Полезные термины</h2>
     <dl class="section_paragraph">
@@ -165,24 +164,112 @@
     </section>
 
     <section class="section_5">
-    <h2 class="section_header" >Классификация</h2>
-    <p>
-    Все планеты Солнечной системы делятся на 2 типа: 
-    <ul>
-        <li><b>планеты земного типа</b></li>
-        <li><b>планеты-гиганты</b></li>
-    </ul>
-    </p>
-    <h3>Планеты земного типа</h3>
-    <p>
-        Планеты земной группы, также известные как планеты земного типа, включают в себя Меркурий, Венеру, Землю и Марс. Эти планеты характеризуются твердыми каменистыми поверхностями и сравнительно небольшими размерами по сравнению с гигантами Солнечной системы, такими как Юпитер и Сатурн. В основном они состоят из металлов и силикатов, имеют относительно высокую плотность, медленное вращение и малое количество спутников.
-    </p>
-    <h3>Планеты-гиганты</h3>
-    <p>
-        Планеты-гиганты Солнечной системы включают Юпитер, Сатурн, Уран и Нептун. Юпитер и Сатурн — газовые гиганты, состоящие преимущественно из водорода и гелия, с мощными магнитными полями и множеством спутников. Уран и Нептун — ледяные гиганты, содержащие больше льда, аммиака и метана, что придает им голубоватый цвет. Все четыре планеты имеют кольца и многочисленные спутники.
-    </p>
+        <h2 class="section_header" >Классификация</h2>
+        <p>
+            Все планеты Солнечной системы делятся на 2 типа: 
+            <ul>
+                <li><b>планеты земного типа</b></li>
+                <li><b>планеты-гиганты</b></li>
+            </ul>
+        </p>
+        <h3>Планеты земного типа</h3>
+        <p>
+            Планеты земной группы, также известные как планеты земного типа, включают в себя Меркурий, Венеру, Землю и Марс. Эти планеты характеризуются твердыми каменистыми поверхностями и сравнительно небольшими размерами по сравнению с гигантами Солнечной системы, такими как Юпитер и Сатурн. В основном они состоят из металлов и силикатов, имеют относительно высокую плотность, медленное вращение и малое количество спутников.
+        </p>
+        <h3>Планеты-гиганты</h3>
+        <p>
+            Планеты-гиганты Солнечной системы включают Юпитер, Сатурн, Уран и Нептун. Юпитер и Сатурн — газовые гиганты, состоящие преимущественно из водорода и гелия, с мощными магнитными полями и множеством спутников. Уран и Нептун — ледяные гиганты, содержащие больше льда, аммиака и метана, что придает им голубоватый цвет. Все четыре планеты имеют кольца и многочисленные спутники.
+        </p>
+    </section>
+
+    <section class="section_6">
+        <h2 class="section_header" >Форма</h2>
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label class="label_block" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label class="label_block" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label class="label_block" for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                       placeholder="123-456-7890" required>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Account Information</legend>
+                
+                <label class="label_block" for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" placeholder="Password" required>
+                
+                <label class="label_block" for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label class="label_block">
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                    Subscribe to newsletter
+                </label>
+                
+                <label class="label_block" for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <label class="label_block" for="dob">Date of Birth:</label>
+                <input type="datetime-local" id="dob" name="dob" required>
+                <label for="birthdaytime">Birthday (date and time):</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Feedback</legend>
+                
+                <label for="feedback">Comments:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" maxlength="200" 
+                          placeholder="Your feedback..." required></textarea>
+                
+                <label for="color">Preferred Color:</label>
+                <select id="color" name="color" multiple required size="3">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </fieldset>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <section class="section_7">
+        <h2 class="section_header">Карта</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509446!2d-122.42127808468129!3d37.77492927975802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818f0e0139fd%3A0x7e6375f26b5db24!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1691010307113!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
     
+    <section class="section_8">
+        <h2 class="section_header">Ютуб-видео</h2>
+        <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
     </main>
 
     <footer>
