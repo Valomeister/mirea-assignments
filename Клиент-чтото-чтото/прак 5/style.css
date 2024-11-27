@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fffab5;
+    
 }
 
 a {
     text-decoration: none;
+    color: #9d9d9d;
 }
 
 a:hover {
-    color: #f4ff5c;
+    color: #ddd;
     transition: .2s;
 }
 
@@ -23,6 +24,7 @@ body {
     font-style: normal;
     line-height: 1.5;
     font-size: 1rem;
+    color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -43,6 +45,10 @@ section, footer {
 
 .section_paragraph {
     
+}
+
+.header a {
+    color: #fff;
 }
 
 .header {
@@ -226,6 +232,99 @@ dt:first-of-type {
 
 .section_5 li {
     list-style-type: none;
+}
+
+/* SECTION 6 */
+form {
+    background: #000;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    color: #fff;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input {
+    color-scheme: dark;
+}
+
+input, textarea, select, button[type="submit"] {
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+}
+
+button[type="submit"] {
+    padding: 10px 30px;
+}
+
+button[type="submit"]:hover {
+    background: rgb(21, 21, 21);
+    cursor: pointer;
+}
+
+label.label_block {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+input:focus::placeholder, 
+textarea:focus::placeholder {
+    color: #666;
+    font-style: normal;
+}
+
+/* SECTION 7, 8 */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {

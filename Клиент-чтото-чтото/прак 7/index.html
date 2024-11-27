@@ -201,6 +201,94 @@
     </section>
 
     <section class="section_6">
+        <h2 class="section_header" >Форма</h2>
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label class="label_block" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label class="label_block" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label class="label_block" for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                       placeholder="123-456-7890" required>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Account Information</legend>
+                
+                <label class="label_block" for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" placeholder="Password" required>
+                
+                <label class="label_block" for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label class="label_block">
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                    Subscribe to newsletter
+                </label>
+                
+                <label class="label_block" for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <label class="label_block" for="dob">Date of Birth:</label>
+                <input type="datetime-local" id="dob" name="dob" required>
+                <label for="birthdaytime">Birthday (date and time):</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Feedback</legend>
+                
+                <label for="feedback">Comments:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" maxlength="200" 
+                          placeholder="Your feedback..." required></textarea>
+                
+                <label for="color">Preferred Color:</label>
+                <select id="color" name="color" multiple required size="3">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </fieldset>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <section class="section_7">
+        <h2 class="section_header">Карта</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509446!2d-122.42127808468129!3d37.77492927975802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818f0e0139fd%3A0x7e6375f26b5db24!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1691010307113!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    
+    <section class="section_8">
+        <h2 class="section_header">Ютуб-видео</h2>
+        <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="section_9">
         <h2 class="section_header">Кнопки</h2>
         <div class="button-container">
             <button class="btn btn-glow">Glow</button>
@@ -210,11 +298,11 @@
           </div>
     </section>
 
-    <section class="section_7">
+    <section class="section_10">
         <h2 class="section_header">Картинки</h2>
         <div class="card-container">
             <div class="card">
-              <img src="gallery images/sun.jpg" alt="Место 1">
+              <img src="sun.jpg" alt="Место 1">
               <div class="card-overlay">
                 <h2>Солнце</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -222,7 +310,7 @@
               </div>
             </div>
             <div class="card card2">
-              <img src="gallery images/earth.jfif" alt="Место 2">
+              <img src="earth.jfif" alt="Место 2">
               <div class="card-overlay">
                 <h2>Земля</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -230,7 +318,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="gallery images/mars.jpg" alt="Место 3">
+              <img src="mars.jpg" alt="Место 3">
               <div class="card-overlay">
                 <h2>Марс</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -241,7 +329,7 @@
           
     </section>
     
-    <section class="section_8">
+    <section class="section_11">
         <h2 class="section_header">Видео</h2>
         <div class="video-container">
             <video
@@ -267,7 +355,9 @@
           
     </section>
 
-    <section class="section_9">
+    
+
+    <section class="section_12">
         <h2 class="section_header">Glassmorphism</h2>
         <div class="gm_menu">
             <div class="gm_card_wrapper">
@@ -297,7 +387,7 @@
         </div>
     </section>
 
-    <section class="section_10">
+    <section class="section_13">
         <div class="social-buttons">
             <div class="button youtube">
                 <i class="fab fa-youtube icon"></i>

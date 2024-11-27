@@ -15,7 +15,7 @@ a:hover {
 }
 
 
-body {  
+body {
     background-color: #020012;
     font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
@@ -25,14 +25,10 @@ body {
     font-size: 1rem;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
 
 section, footer {
     max-width: 1200px;
-    padding: 50px;
+    padding: 50px 20px;
     margin: 0 auto;
 }
 
@@ -47,7 +43,7 @@ section, footer {
 
 .header {
     z-index: 10;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     background-color: #020012;
@@ -70,97 +66,20 @@ section, footer {
     font-size: 24px;
 }
 
-.burger-checkbox, .burger {
-    display: none;
-}
-
-.menu-list {
+.menu {
     display: flex;
-    list-style-type: none;
     justify-content: space-between;
-    gap: 10px;
+    list-style: none;
 }
 
-@media (max-width: 650px) {
-.burger-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-.burger {
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    border: none;
-    background: transparent;
-    width: 40px;
-    height: 26px;
-  }
-.burger::before,
-.burger::after {
-    content: '';
-    left: 0;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 10px;
-    background: #fff;
-  }
-.burger::before {
-    top: 0;
-    box-shadow: 0 11px 0 #fff;
-    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
-  }
-.burger::after {
-    bottom: 0;
-    transition: bottom .3s .15s, transform .3s;
-  }
-.burger-checkbox:checked + .burger::before {
-    top: 11px;
-    transform: rotate(45deg);
-    box-shadow: 0 6px 0 rgba(0,0,0,0);
-    transition: box-shadow .15s, top .3s, transform .3s .15s;
-  }
-.burger-checkbox:checked + .burger::after {
-    bottom: 11px;
-    transform: rotate(-45deg);
-    transition: bottom .3s, transform .3s .15s;
-  }
-.menu-list {
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 65px 0;
-    margin: 0;
-    background: #020012 ;
-    list-style-type: none;
-    transform: translateX(-100%);
-    transition: .3s;
-    width: 100vw;
-    height: 100vh;
-  }
-.menu-item {
-    display: block;
-    padding: 8px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-  }
-.menu-item:hover {
-    background: rgba(255,255,255,.2)
-  }
-.burger-checkbox:checked ~ .menu-list {
-    transform: translateX(0);
-  }
-
+.menu li {
+    margin-left: 50px;
+    list-style: disc;
 }
 
+.menu li a {
+    text-decoration: underline;
+}
 
 .section_1 {
     margin-top: 75px;
@@ -206,14 +125,20 @@ dt:first-of-type {
     margin-top: 0; /* Убираем верхний отступ для первого термина */
 }
 
-.section_3 .img_map {
-    max-width: 100%;
-}
 
 .section_3 .section_paragraph {
     padding-bottom: 30px;
 }
 
+.section_3 p .img2 {
+    width: 100px;
+    float: left;
+}
+
+.section_3 p .img1 {
+    width: 80px;
+    float: right;
+}
 
 .section_4 li {
     padding: default;
@@ -224,9 +149,6 @@ dt:first-of-type {
     margin: 15px 0 10px;
 }
 
-.section_5 li {
-    list-style-type: none;
-}
 
 footer {
     background-color: #2c3e50; /* Темный фон для футера */
@@ -286,23 +208,3 @@ footer a:hover {
 section:nth-child(even) {
     background-color: #4844fc;
 } */
-
-@media (max-width: 900px) {
-    .section_1 {
-        position: static;
-    }
-
-    .section_1 img {
-        display: none;
-    }
-
-    section, footer {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    section, footer {
-        padding: 10px;
-    }
-}
