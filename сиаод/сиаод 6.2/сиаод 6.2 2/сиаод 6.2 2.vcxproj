@@ -130,7 +130,8 @@
     <ClCompile Include="сиаод 6.2 2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="text.txt" />
+    <Text Include="keywords-css.txt" />
+    <Text Include="oblomov.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

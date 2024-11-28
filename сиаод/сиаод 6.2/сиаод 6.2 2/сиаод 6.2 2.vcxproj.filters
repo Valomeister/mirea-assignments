@@ -20,6 +20,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="text.txt" />
+    <Text Include="keywords-css.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="oblomov.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
 </Project>
