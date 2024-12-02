@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Адаптиваня галерея</title>
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titke_and_logo">
+            <img src="fav.png" alt="sun" width="30">
+            <h1><a href="index.html">Солнечная система</a></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="js-10.html" class="menu-item">азы js</a><li>
+                <li><a href="gallery.html" class="menu-item">Галерея</a><li>
+                <li><a href="#" class="menu-item">Классификация</a><li>
+                <li class="notification-li-item">
+                    <div class="notification-container">
+                        <div class="notification-icon">
+                            <span class="bell-icon">🔔</span>
+                            <span class="notification-count">3</span>
+                        </div>
+                        <div class="notification-list">
+                            <div class="notification-item">Новое сообщение от Алексея</div>
+                            <div class="notification-item">Обновление системы</div>
+                            <div class="notification-item">Событие в календаре через 30 минут</div>
+                        </div>
+                  </div>
+                </li>
+            </ul>
+        </nav>  
+    </header>   
+    <!-- </header>
+    <header>
+        <h1>Объекты солнечной системы</h1>
+    </header> -->
+    <div class="gallery">
+        <div class="gallery_item item1">
+            <img src="gallery images/sun.jpg" alt="" class="gallery_img"></img>
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <!-- <div class="gallery_item item2"><img src="gallery images/mercury.jpg" alt="" class="gallery_img"></div> -->
+        <div class="gallery_item item2">
+            <img src="gallery images/venus.jpg" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <div class="gallery_item item3">
+            <img src="gallery images/earth.jfif" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <!-- <div class="gallery_item item5"><img src="gallery images/moon.jpg" alt="" class="gallery_img"></div> -->
+        <div class="gallery_item item4">
+            <img src="gallery images/mars.jpg" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <div class="gallery_item item5">
+            <img src="gallery images/jupiter.webp" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <div class="gallery_item item6">
+            <img src="gallery images/saturn.jpg" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <div class="gallery_item item7">
+            <img src="gallery images/asteroid belt.jpg" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <div class="gallery_item item8">
+            <img src="gallery images/uranus.avif" alt="" class="gallery_img">
+            <div class="add_to_cart_btn">Добавить в корзину</div>
+        </div>
+        <!-- <div class="gallery_item item11"><img src="gallery images/neptune.jpg" alt="" class="gallery_img"></div> -->
+        <!-- <div class="gallery_item item12"><img src="gallery images/pluto.jpg" alt="" class="gallery_img"></div> -->
+        
+    </div>
+    <section class="section_1">
+        <h2 class="section_header">Корзина</h2>
+        <div class="shopping_cart" id="shopping_cart">
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/sun.jpg" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Солнце. <br>Звезда солнечной системы.</p>
+                    <p class="cart_item_description_price">15₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/venus.jpg" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Венера. <br>2-я планета системы.</p>
+                    <p class="cart_item_description_price">5₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/earth.jfif" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Земля. <br>3-я планета системы.</p>
+                    <p class="cart_item_description_price">8₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/mars.jpg" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Марс. <br>4-я планета системы.</p>
+                    <p class="cart_item_description_price">7₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/jupiter.webp" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Юпитер. <br>5-я планета системы.</p>
+                    <p class="cart_item_description_price">13₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/saturn.jpg" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Сатурн. <br>6-я планета системы.</p>
+                    <p class="cart_item_description_price">11₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/asteroid belt.jpg" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Пояс астероидов. <br>Скопление небесных тел между 4-й и 5-й планетами</p>
+                    <p class="cart_item_description_price">8₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_img_container">
+                    <img  class="cart_item_img" src="gallery images/uranus.avif" alt="">
+                </div>
+                <div class="cart_item_description_container">
+                    <p class="cart_item_description_text">Уран. <br>7-я планета системы.</p>
+                    <p class="cart_item_description_price">10₽/шт.</p>
+                </div>
+                <div class="cart_item_quantity_container">
+                    <div class="cart_item_quantity_buttons">
+                        <div class="cart_item_quantity_button button_less" id="lessButton"><span class="minus">-</span><i class="remove fas fa-trash-alt"></i></div>
+                        <div class="cart_item_quantity_number" id="itemCount">0 шт.</div>
+                        <div class="cart_item_quantity_button button_more" id="moreButton">+</div>
+                    </div>
+                </div>
+            </div>
+            <p class="sum">итого: <span id="amount">0</span>₽</p>
+        </div>
+
+    </section>
+    <button class="delete-btn">
+         Удалить
+    </button>
+    <script src="gallery-script.js"></script>
+</body>
+</html>

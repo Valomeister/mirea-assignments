@@ -1,0 +1,108 @@
+
+#captchaForm {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+    width: 80%;
+    margin-top: 100px;
+    background: #000;
+}
+
+  #captchaContainer {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  #captchaInput {
+    margin: 0;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #000;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fffefe;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+  }
+  
+  button, .button {
+    margin-top: 20px;
+    width: min-content;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, .button:hover {
+    background-color: #0056b3;
+  }
+
+  .submit {
+    width: 100%;
+    color: #000;
+  }
+  
