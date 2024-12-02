@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Адаптиваня галерея</title>
     <link rel="stylesheet" href="gallery-style.css">
-    
+    <link rel="stylesheet" href="general-style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="titke_and_logo">
+            <img src="fav.png" alt="sun" width="30">
+            <h1><a href="index.html">Солнечная система</a></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="#" class="menu-item">Термины</a><li>
+                <li><a href="gallery.html" class="menu-item">Галерея</a><li>
+                <li><a href="#" class="menu-item">Классификация</a><li>
+                <li class="notification-li-item">
+                    <div class="notification-container">
+                        <div class="notification-icon">
+                            <span class="bell-icon">🔔</span>
+                            <span class="notification-count">3</span>
+                        </div>
+                        <div class="notification-list">
+                            <div class="notification-item">Новое сообщение от Алексея</div>
+                            <div class="notification-item">Обновление системы</div>
+                            <div class="notification-item">Событие в календаре через 30 минут</div>
+                        </div>
+                  </div>
+                </li>
+            </ul>
+        </nav>  
+    </header>   
+    <!-- </header>
     <header>
         <h1>Объекты солнечной системы</h1>
-    </header>
+    </header> -->
     <div class="gallery">
         <div class="gallery_item item1"><img src="gallery images/sun.jpg" alt="" class="gallery_img"></img></div>
         <!-- <div class="gallery_item item2"><img src="gallery images/mercury.jpg" alt="" class="gallery_img"></div> -->
