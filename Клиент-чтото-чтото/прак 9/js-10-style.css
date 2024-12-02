@@ -1,0 +1,74 @@
+body {
+    padding-top: 100px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+
+  .like-button, .draw-button {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .draw-button {
+    left: 150px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .draw-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  }
+
+  .like-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+  
+  .draw-button {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+  }
+  
