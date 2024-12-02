@@ -72,3 +72,46 @@ submitCapchaButton.addEventListener("click", () => {
         generateNumberCaptcha(); // Переход к числовой капче при ошибке
     }
 });
+
+
+
+
+
+
+
+
+
+
+function Accumulator(startingValue) {
+  // Инициализируем свойство value с начальным значением
+  this.value = startingValue;
+
+  // Метод для считывания нового числа и добавления его к value
+  this.read = function() {
+      // Читаем новое число через prompt
+      let input = prompt("Введите число: ");
+      
+      // Преобразуем введённое значение в число
+      let number = Number(input);
+      
+      // Проверяем, является ли введённое значение числом
+      if (!isNaN(number)) {
+          // Если это число, добавляем его к текущему значению
+          this.value += number;
+      } else {
+          alert("Это не число. Пожалуйста, введите корректное значение.");
+      }
+  };
+}
+
+// Пример использования:
+
+// Создаем экземпляр Accumulator с начальным значением 10
+let accumulator = new Accumulator(10);
+
+// Проводим несколько операций с методом read
+accumulator.read();  // Пользователь вводит число
+accumulator.read();  // Второй ввод
+
+// Выводим текущее значение
+console.log(accumulator.value);  // Выводит общее значение
