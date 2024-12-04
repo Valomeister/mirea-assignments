@@ -1,0 +1,16 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-message {
+    max-width: 400px;
+    background-color: #000000; /* Темный фон для формы */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0px 8px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}

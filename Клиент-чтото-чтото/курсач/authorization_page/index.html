@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../general/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titke_and_logo">
+            <img src="images/fav.png" alt="sun" width="30">
+            <h1><a href="../main_page/index.html">Солнечная система</a></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="../big_objects_page/index.html" class="menu-item">Крупные тела</a><li>
+                <li><a href="../exploring_page/index.html" class="menu-item">История</a><li>
+                <li><a href="" class="menu-item">Вход/регистрация</a><li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section class="section section_1">
+            <div class="section_content section_1_content">
+                <div class="container">
+                    <form class="registration-form" action="succesful_authorisation.html" method="POST">
+                        <h2>Регистрация</h2>
+                        <label for="username">Имя пользователя:</label>
+                        <input type="text" id="username" name="username" placeholder="Введите ваше имя" required>
+            
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+            
+                        <label class="password_label" for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            
+                        <button type="submit" class="submit">Зарегистрироваться</button>
+                        <div class="need_log_in">Уже есть аккаунт?</div>
+                        <div class="need_register">Еще нет аккаунта?</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="../general/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

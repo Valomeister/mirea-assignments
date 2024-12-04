@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 70px 0 0;
+    background: #000;
+    color: #fff;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    /* height: 1500vh; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.circle {
+    z-index: -1;
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(246, 231, 116);
+}
+
+section {
+    padding: 70px 50px;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.section_content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+  
+.section_header {
+    background: #000;
+    margin: 0 0 20px;
+}
+
+.section_paragraph {
+    background: #000;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* NAVIGATION MENU*/
+.header a {
+    color: #fff;
+}
+
+.header {
+    grid-area: header;
+    z-index: 100000;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    border-bottom: 1px solid #2d2d2d;
+    /* box-shadow: 0px 5px 10px #232222;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    height: 70px;
+}
+  
+.titke_and_logo {
+    display: flex;
+    align-items: center;
+}
+
+.titke_and_logo img {
+    margin-right: 10px;
+}
+  
+.titke_and_logo h1 {
+    font-size: 24px;
+}
+  
+.burger-checkbox,
+.burger {
+    display: none;
+}
+  
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+.menu-list li a {
+  }
+  
+
+  
+@media (max-width: 680px) {
+    
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+  
+    .burger {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+    }
+  
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #fff;
+    }
+  
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #fff;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+  
+    .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+  
+    .burger-checkbox:checked+.burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+  
+    .burger-checkbox:checked+.burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+    }
+  
+    .menu-list {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 65px 0;
+        margin: 0;
+        background: #020012;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    .menu-item {
+        display: block;
+        padding: 8px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+  
+    .menu-item:hover {
+        background: rgba(255, 255, 255, .2)
+    }
+  
+    .burger-checkbox:checked~.menu-list {
+        transform: translateX(0);
+    }
+  
+}
