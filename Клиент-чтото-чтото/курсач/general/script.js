@@ -1,5 +1,5 @@
 var minCircleWidth = 1;
-var maxCircleWidth = 5;
+var maxCircleWidth = 3;
 
 // Функция для создания круга
 function createCircle(startX, endX, startY, endY) {

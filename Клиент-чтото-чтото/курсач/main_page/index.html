@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
     <link rel="stylesheet" href="../general/style.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -21,7 +23,8 @@
             <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
             <label for="burger-checkbox" class="burger"></label>
             <ul class="menu-list">
-                <li><a href="../big_objects_page/index.html" class="menu-item">Крупные тела</a><li>
+                <li><a href="../big_objects_page/index.html" class="menu-item">Космические тела</a><li>
+                <li><a href="../satellites_page/index.html" class="menu-item">Спутники</a><li></li>
                 <li><a href="../exploring_page/index.html" class="menu-item">История</a><li>
                 <li><a href="../authorization_page/index.html" class="menu-item">Вход/регистрация</a><li>
             </ul>
@@ -132,8 +135,245 @@
                 </div>
             </div>
         </section>
+        <section class="section section_4">
+            <div class="section_content section_4_content">
+                <h2 class="section_header">Удивительные факты</h2>
+                <p class="section_paragraph">
+                    Наша Солнечная система полна удивительных явлений
+                     и загадок. Каждая планета уникальна: от 
+                     гигантских бурь Юпитера до древних вулканов 
+                     Марса. Изучение этих миров помогает нам лучше 
+                     понять космос и наше место в нем.
+                </p>
+                <!--Slider main container-->
+                <div class="facts_slider swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Солнечное топливо</h3>
+                                    <p class="fact_description">
+                                        Солнце каждую секунду сжигает около 600 
+                                        миллионов тонн водорода, превращая его в 
+                                        гелий. Этот процесс выделяет огромное 
+                                        количество энергии, которая обеспечивает 
+                                        свет и тепло для всей Солнечной системы. 
+                                        Несмотря на такие колоссальные затраты, 
+                                        запаса топлива хватит еще примерно на 5 
+                                        миллиардов лет!
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/sun.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Долгий меркурианский день</h3>
+                                    <p class="fact_description">
+                                        На Меркурии день длится два меркурианских 
+                                        года! Это потому, что Меркурий вращается 
+                                        вокруг своей оси очень медленно — один оборот 
+                                        составляет 59 земных дней, а его орбита вокруг 
+                                        Солнца занимает всего 88 земных дней.
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/mercury.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Горячая штучка</h3>
+                                    <p class="fact_description">
+                                        На Венере температура на поверхности может достигать 
+                                        +460°C, что горячее, чем на Меркурии, несмотря на то, 
+                                        что Венера находится дальше от Солнца. Всё из-за её 
+                                        плотной атмосферы, состоящей в основном из углекислого 
+                                        газа, который создаёт мощный парниковый эффект.
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/venus.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Земля: место, где вода течет</h3>
+                                    <p class="fact_description">
+                                        Земля — единственная планета в Солнечной системе, 
+                                        на которой существует жидкая вода в значительных 
+                                        количествах, что делает её уникальной для поддержания жизни.
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/earth.jfif" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Покруче Эвереста</h3>
+                                    <p class="fact_description">
+                                        На Марсе находится самая высокая гора в 
+                                        Солнечной системе — Олимп (Olympus Mons), 
+                                        высота которой составляет около 27 км, что 
+                                        более чем в три раза выше, чем Эверест!
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/mars.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Практически звезда</h3>
+                                    <p class="fact_description">
+                                        Юпитер мог бы стать звездой, если бы его масса 
+                                        была в 80 раз больше. Однако из-за недостаточной 
+                                        массы он так и остался планетой, хотя состоит из 
+                                        тех же элементов, что и звезды.
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/jupiter.webp" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Планета-гигант, которая легче воды</h3>
+                                    <p class="fact_description">
+                                        Сатурн — это самая легкая планета в Солнечной 
+                                        системе. Его плотность настолько низка, что 
+                                        если бы можно было поместить Сатурн в гигантский 
+                                        океан, он бы плавал на поверхности!
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/saturn.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Космический гигант, лежащий на боку</h3>
+                                    <p class="fact_description">
+                                        Уран — единственная планета в Солнечной 
+                                        системе, которая вращается на боку. Его 
+                                        ось наклонена почти на 98 градусов, что 
+                                        делает его вращение уникальным и сильно 
+                                        отличающимся от других планет.
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/uranus.avif" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide_caintainer">
+                            <div class="fact_content">
+                                <div class="fact_text">
+                                    <h3 class="fact_header">Ожидается порывистый ветер...</h3>
+                                    <p class="fact_description">
+                                        Нептун — самая удаленная планета от 
+                                        Солнца в нашей Солнечной системе и обладает 
+                                        самыми сильными ветрами: их скорость может 
+                                        достигать 2,100 км/ч, что почти в 5 раз 
+                                        быстрее скорости звука!
+                                    </p>
+                                </div>
+                                <img class="fact_img" src="gallery images/neptune.jpg" alt="merc">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer">
+        <div class="footer-section about-us">
+            <h3>О нас</h3>
+            <p id="footer-about-txt">
+                Наш проект посвящен красоте и загадкам 
+                Солнечной системы. Мы стремимся сделать 
+                науку доступной и увлекательной, рассказывая 
+                о планетах, звездах и космосе. Этот сайт создан 
+                для всех, кто мечтает исследовать Вселенную и 
+                узнать больше о нашем месте в ней.
+                
+            </p>
+            <div class="social-buttons">
+                <div class="button youtube">
+                    <i class="fab fa-youtube icon"></i>
+                </div>
+                <div class="button linkedin">
+                    <i class="fab fa-instagram icon"></i>
+                </div>
+                <div class="button telegram">
+                    <i class="fab fa-telegram-plane icon"></i>
+                </div>
+            </div>
+        </div>
+      
+        <div class="footer-section quick-links">
+            <h3>Полезные ссылки</h3>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">ЧаВо</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Условия пользования</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+      
+        
+      
+        <div class="footer-section contact-us">
+            <h3>Контакты</h3>
+            <p>
+                <i class="icon-location"></i> ул. Тверская, д. 14, Москва, 117513, Россия
+            </p>
+            <p>
+                <i class="icon-phone"></i> +7 987 123-45-67 <br>
+                <i class="icon-phone"></i> +7 987 123-45-67
+            </p>
+            <p>
+                <i class="icon-email"></i> example@mail.ru
+            </p>
+        </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2021 Student MIREA. All Rights Reserved</p>
+            </div>
+    </footer>
+
+    <script src="swiper-bundle.js"></script>
     <script src="../general/script.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

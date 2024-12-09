@@ -17,7 +17,7 @@
     font-size: 60px;
     margin-bottom: 40px;
     line-height: 1;
-    width: 700px;
+    max-width: 700px;
     
 }
 
@@ -28,7 +28,6 @@
 .section_1 img {
     display: block;
     height: 400px;
-    z-index: 2;
 }
 
 /*  SECTION 2  */
@@ -54,11 +53,7 @@
 }
 
 .section_2 img {
-    /* display: block;
-    position: absolute;
-    height: calc(100%);
-    right: 5%;
-    top: 0; */
+    max-width: 100%;
 }
 
 
@@ -76,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
     margin-bottom: 70px;
 }
 
@@ -112,6 +108,7 @@
 
 .section_4_header_asteroids {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
     gap: 20px;
@@ -120,6 +117,7 @@
 
 .section_4_header_asteroid {
     flex: 1;
+    min-width: 320px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -134,8 +132,6 @@
 
 .section_4 .section_header {
     text-align: center;
-    font-size: 60px;
-    
 }
 
 .section_4_header_asteroid img {
@@ -146,19 +142,55 @@
     border-bottom-right-radius: 10px;
 }
 
-/* .section_4_header_and_text {
-    margin-bottom: 50px;
+
+
+
+
+@media (max-width: 1200px) {
+    .section_1_content {
+        flex-direction: column;
+    }
+
+    .section_1 .section_paragraph {
+        max-width: 700px;
+    }
+
+    .section_1_content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section_2_content {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .section_3_planet,
+    .section_3_planet:nth-child(even) {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .section_3_planet_img {
+        width: 300px;
+        height: 300px;  
+    }
 }
 
 
+@media (max-width: 400px) {
+    .section_4_header_asteroid {
+        min-width: 275px;
+    }
 
-.section_paragraph {
-    max-width: 600px;
+    .section_4_header_asteroid_text {
+        padding: 10px 12px;
+    
+    }
 }
-
-.section_4 img {
-    display: block;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-} */
